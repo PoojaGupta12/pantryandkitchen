@@ -1,0 +1,61 @@
+<mat-sidenav-container class="demo-root" fullscreen>
+  <mat-sidenav #start>
+    <mat-nav-list>
+      <a *ngFor="let navItem of navItems"
+         mat-list-item
+         (click)="start.close()"
+         routerLinkActive
+         #routerLinkActiveInstance="routerLinkActive"
+         [attr.tabindex]="routerLinkActiveInstance.isActive ? 0 : -1"
+         [routerLink]="[navItem.route]">
+        {{navItem.name}}
+      </a>
+
+      <hr>
+
+      <a mat-list-item
+         tabindex="-1"
+         (click)="start.close()"
+         [routerLink]="['/baseline']">
+        Baseline
+      </a>
+    </mat-nav-list>
+    <button mat-button tabindex="-1" (click)="start.close()">CLOSE</button>
+  </mat-sidenav>
+  <div>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="start.open('mouse')">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="demo-toolbar">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Open basic menu">
+          <img matListAvatar [src]="user.imageSrc"  [style.border-radius.%]="50">
+          <span [style.margin-left.px]="10">{{user.userName}}</span>
+        </button>
+
+      <mat-menu #menu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item *ngFor="let item of items" (click)="select(item.text)" [disabled]="item.disabled" [ngSwitch]="item.text">
+             <span *ngSwitchCase="'Profile'"><mat-icon *ngSwitchCase="'Profile'">account_circle</mat-icon> {{item.text}}</span>
+             <span  *ngSwitchCase="'Help'">  <mat-icon *ngSwitchCase="'Help'">help</mat-icon>  {{item.text}}</span>
+             <span  *ngSwitchCase="'Settings'"> <mat-icon *ngSwitchCase="'Settings'">settings</mat-icon> {{item.text}}</span>
+             <span  *ngSwitchCase="'SignOut'"> <mat-icon *ngSwitchCase="'SignOut'">exit_to_app</mat-icon> {{item.text}} </span>
+        </button>
+      </mat-menu>
+
+        <div>
+          <button mat-icon-button (click)="toggleFullscreen()" title="Toggle fullscreen">
+            <mat-icon>fullscreen</mat-icon>
+          </button>
+          <button mat-button (click)="toggleTheme()">{{dark ? 'Light' : 'Dark'}} theme</button>
+          <button mat-button (click)="root.dir = (root.dir == 'rtl' ? 'ltr' : 'rtl')" title="Toggle between RTL and LTR">
+            {{root.dir.toUpperCase()}}
+          </button>
+        </div>
+      </div>
+    </mat-toolbar>
+
+    <div #root="dir" dir="ltr" class="demo-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</mat-sidenav-container>
