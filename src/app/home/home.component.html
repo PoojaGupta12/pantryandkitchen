@@ -1,0 +1,44 @@
+
+<div class="home-row1">
+    <mat-card>
+        <mat-toolbar color="accent" >
+          <mat-icon>refresh</mat-icon>
+        </mat-toolbar>
+        <mat-card-title>Lorem ipsum</mat-card-title>
+        <mat-card-content>
+          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+          <mat-chip-list>
+              <mat-chip color="accent" selected="true">Lorem-Waiting</mat-chip>
+          </mat-chip-list>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+        <mat-toolbar color="primary" >
+          <mat-icon>refresh</mat-icon>
+        </mat-toolbar>
+        <mat-card-title>Lorem ipsum</mat-card-title>
+        <mat-card-content>
+          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+          <mat-chip-list>
+              <mat-chip color="primary" selected="true">Lorem-InProgress</mat-chip>
+              <span class="demo-fill-remaining"></span>
+              <img [src]="user.imageSrc"  [style.border-radius.%]="50">
+              <img [src]="user.imageSrc"  [style.border-radius.%]="50">
+          </mat-chip-list>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+        <mat-toolbar color="warn" >
+          <mat-icon>refresh</mat-icon>
+        </mat-toolbar>
+        <mat-card-title>Lorem ipsum</mat-card-title>
+        <mat-card-content>
+          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+          <mat-chip-list>
+              <mat-chip color="warn" selected="true">Lorem-OnHold</mat-chip>
+          </mat-chip-list>
+        </mat-card-content>
+    </mat-card>
+</div>
