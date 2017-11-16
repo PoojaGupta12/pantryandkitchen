@@ -9,7 +9,7 @@ export class HomeComponent {
 
 
 
-  user ={userName: 'Jhilmil', imageSrc: "../assets/images/Cat.jpg"};
+  user ={userName: 'cat', imageSrc: "../assets/images/Cat.jpg"};
   constructor() { }
 
 
