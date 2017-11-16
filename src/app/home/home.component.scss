@@ -1,11 +1,15 @@
 .home-row1 {
   display: flex;
   flex-flow: row wrap;
+  margin-left: 260px;
 
   .mat-card {
-      padding: 0;
-      margin: 10px;
+    margin: 0 16px 16px 0;
+    width: 270px;
 
+    img {
+      background-color:gray;
+    }
     & .mat-card-title {
       padding: 10px;
       font-weight:bold;
@@ -29,7 +33,7 @@
 }
 
 .example-card {
-  width: 456px;
+  width: 335px;
 }
 
 .messages{

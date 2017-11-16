@@ -38,7 +38,7 @@ items = [
   {text: 'SignOut'}
 ];
 
-user ={userName: 'ABCD', imageSrc: "../assets/images/Jhilmil.jpg"};
+user ={userName: 'ABCD', imageSrc: "../assets/images/cat.jpg"};
 
     constructor(private _element: ElementRef,
       private _renderer: Renderer2,
