@@ -3,15 +3,6 @@ import {Component, ElementRef, Renderer2, ViewEncapsulation} from '@angular/core
 
 @Component({
   moduleId: module.id,
-  selector: 'entry-app',
-  template: '<router-outlet></router-outlet>',
-  encapsulation: ViewEncapsulation.None,
-  preserveWhitespaces: false,
-})
-export class EntryApp {}
-
-@Component({
-  moduleId: module.id,
   selector: 'pk-start-app',
   templateUrl: './start-app.component.html',
   styleUrls: ['./start-app.component.scss'],

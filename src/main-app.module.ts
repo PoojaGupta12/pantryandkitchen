@@ -4,7 +4,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import   {ALL_ROUTES}  from  './app/start-app/routes';
-import  {EntryApp}  from  './app/start-app/start-app.component';
+import  {EntryAppComponent}  from  './app/start-app/entry-app.component';
 import   {StartModule}  from './app/start-app/start.module';
 
 
@@ -17,17 +17,17 @@ import   {StartModule}  from './app/start-app/start.module';
     RouterModule.forRoot(ALL_ROUTES),
   ],
   declarations: [
-    EntryApp
+    EntryAppComponent
   ],
   entryComponents: [
-    EntryApp,
+    EntryAppComponent,
   ],
 })
 export class MainAppModule {
   constructor(private _appRef: ApplicationRef) { }
 
     ngDoBootstrap() {
-      this._appRef.bootstrap(EntryApp);
+      this._appRef.bootstrap(EntryAppComponent);
     }
 
 }
