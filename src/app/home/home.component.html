@@ -1,151 +1,109 @@
-<div class="mat-card-wrapper" >
-    <mat-card>
-        <img src="../../assets/images/salad-2.jpg" alt="">
-    </mat-card>
-    <div class="homeMsg">
-     <a href="#">Get started </a>
-        <p style="font-size: 40px">on the path to</p>
-        <p style="font-size: 50px">Healthy Eating...</p>
-    </div>
-</div>
-<div class="home-row1">
+<div fxLayout="column" fxLayoutGap="10px">
 
-    <mat-card>
-        <img mat-card-image src="../../assets/images/berries1.jpg">
-        <mat-card-title>Plan your meals</mat-card-title>
-        <mat-card-content>
-          <p>Have fun with planned meals</p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button mat-button><mat-icon>thumb_up</mat-icon></button>
-          <button mat-button><mat-icon>share</mat-icon></button>
-        </mat-card-actions>
-    </mat-card>
+      <div fxFlexAlign="center" class="mat-card-wrapper" >
+          <mat-card>
+              <img src="../../assets/images/salad-2.jpg" alt="">
+          </mat-card>
+          <div class="homeMsg">
+          <a href="#">Get started </a>
+              <p style="font-size: 40px">on the path to</p>
+              <p style="font-size: 50px">Healthy Eating...</p>
+          </div>
+      </div>
 
-    <mat-card>
-        <img mat-card-image src="../../assets/images/matar.jpg">
-        <mat-card-title>Learn new meals</mat-card-title>
-        <mat-card-content>
-          <p>Cook something new</p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-            <button mat-button><mat-icon>thumb_up</mat-icon></button>
-            <button mat-button><mat-icon>share</mat-icon></button>
-        </mat-card-actions>
-    </mat-card>
-    <mat-card>
-        <img mat-card-image src="../../assets/images/healthy.jpg">
-        <mat-card-title>Pick healthy meals</mat-card-title>
-        <mat-card-content>
-          <p>Cook healthy meals</p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-            <button mat-button><mat-icon>thumb_up</mat-icon></button>
-            <button mat-button><mat-icon>share</mat-icon></button>
-        </mat-card-actions>
-    </mat-card>
-    <mat-card>
-      <img mat-card-image src="../../assets/images/mangoes.PNG">
-      <mat-card-title>Pick healthy meals</mat-card-title>
-      <mat-card-content>
-        <p>Cook healthy meals</p>
-      </mat-card-content>
-      <mat-card-actions align="end">
-          <button mat-button><mat-icon>thumb_up</mat-icon></button>
-          <button mat-button><mat-icon>share</mat-icon></button>
-      </mat-card-actions>
-  </mat-card>
-    <mat-card>
-        <mat-toolbar color="accent" >
-          <mat-icon>refresh</mat-icon>
-        </mat-toolbar>
-        <mat-card-title>Lorem ipsum</mat-card-title>
-        <mat-card-content>
-          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
-          <mat-chip-list>
-              <mat-chip color="accent" selected="true">Lorem-Waiting</mat-chip>
-          </mat-chip-list>
-        </mat-card-content>
-    </mat-card>
 
-    <mat-card>
-        <mat-toolbar color="primary" >
-          <mat-icon>refresh</mat-icon>
-        </mat-toolbar>
-        <mat-card-title>Lorem ipsum</mat-card-title>
-        <mat-card-content>
-          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
-          <mat-chip-list>
-              <mat-chip color="primary" selected="true">Lorem-InProgress</mat-chip>
-              <span class="demo-fill-remaining"></span>
-              <img [src]="user.imageSrc"  [style.border-radius.%]="50">
-              <img [src]="user.imageSrc"  [style.border-radius.%]="50">
-          </mat-chip-list>
-        </mat-card-content>
-    </mat-card>
+      <div  fxLayout="row" fxLayoutAlign="center end" fxLayoutGap="5px" fxLayout.xs="column">
 
-    <mat-card>
-        <mat-toolbar color="warn" >
-          <mat-icon>refresh</mat-icon>
-        </mat-toolbar>
-        <mat-card-title>Lorem ipsum</mat-card-title>
-        <mat-card-content>
-          <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
-          <mat-chip-list>
-              <mat-chip color="warn" selected="true">Lorem-OnHold</mat-chip>
-          </mat-chip-list>
-        </mat-card-content>
-    </mat-card>
+          <mat-card fxFlex="1 1 29%">
+              <img mat-card-image src="../../assets/images/berries1.jpg">
+              <mat-card-title>Plan your meals</mat-card-title>
+              <mat-card-content>
+                <p>Have fun with planned meals</p>
+              </mat-card-content>
+              <mat-card-actions align="end">
+                <button mat-button><mat-icon>thumb_up</mat-icon></button>
+                <button mat-button><mat-icon>share</mat-icon></button>
+              </mat-card-actions>
+          </mat-card>
 
-    <mat-card>
-      <mat-toolbar color="accent" >
-        <mat-icon>refresh</mat-icon>
-      </mat-toolbar>
-      <mat-card-title>Lorem ipsum</mat-card-title>
-      <mat-card-content>
-        <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
-        <mat-chip-list>
-            <mat-chip color="accent" selected="true">Lorem-Waiting</mat-chip>
-        </mat-chip-list>
-      </mat-card-content>
-  </mat-card>
+          <mat-card fxFlex="1 1 29%">
+              <img mat-card-image src="../../assets/images/matar.jpg">
+              <mat-card-title>Learn new meals</mat-card-title>
+              <mat-card-content>
+                <p>Cook something new</p>
+              </mat-card-content>
+              <mat-card-actions align="end">
+                  <button mat-button><mat-icon>thumb_up</mat-icon></button>
+                  <button mat-button><mat-icon>share</mat-icon></button>
+              </mat-card-actions>
+          </mat-card>
+          <mat-card fxFlex="1 1 29%">
+              <img mat-card-image src="../../assets/images/healthy.jpg">
+              <mat-card-title>Pick healthy meals</mat-card-title>
+              <mat-card-content>
+                <p>Cook healthy meals</p>
+              </mat-card-content>
+              <mat-card-actions align="end">
+                  <button mat-button><mat-icon>thumb_up</mat-icon></button>
+                  <button mat-button><mat-icon>share</mat-icon></button>
+              </mat-card-actions>
+          </mat-card>
+      </div>
+      <div  fxLayout="row" fxLayoutAlign="center end" fxLayoutGap="3px" fxLayout.xs="column">
+          <mat-card fxFlex="1 1 22.5%">
+              <mat-toolbar color="accent" >
+                <mat-icon>refresh</mat-icon>
+              </mat-toolbar>
+              <mat-card-title>Lorem ipsum</mat-card-title>
+              <mat-card-content>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+                <mat-chip-list>
+                    <mat-chip color="accent" selected="true">Lorem-Waiting</mat-chip>
+                </mat-chip-list>
+              </mat-card-content>
+          </mat-card>
 
-    <mat-card class="example-card">
-        <mat-card-header class="messages">
-        </mat-card-header>
-        <mat-card-content>
-            <mat-toolbar color="warn">
-                <button mat-mini-fab > <mat-icon>insert_drive_file</mat-icon></button>
+          <mat-card fxFlex="1 1 21.5%">
+              <mat-toolbar color="primary" >
+                <mat-icon>refresh</mat-icon>
+              </mat-toolbar>
+              <mat-card-title>Lorem ipsum</mat-card-title>
+              <mat-card-content>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+                <mat-chip-list>
+                    <mat-chip color="primary" selected="true">Lorem-InProgress</mat-chip>
+                    <span class="demo-fill-remaining"></span>
+                    <img [src]="user.imageSrc"  [style.border-radius.%]="50">
+                    <img [src]="user.imageSrc"  [style.border-radius.%]="50">
+                </mat-chip-list>
+              </mat-card-content>
+          </mat-card>
+
+          <mat-card fxFlex="1 1 21.5%">
+              <mat-toolbar color="warn" >
+                <mat-icon>refresh</mat-icon>
+              </mat-toolbar>
+              <mat-card-title>Lorem ipsum</mat-card-title>
+              <mat-card-content>
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+                <mat-chip-list>
+                    <mat-chip color="warn" selected="true">Lorem-OnHold</mat-chip>
+                </mat-chip-list>
+              </mat-card-content>
+          </mat-card>
+
+          <mat-card fxFlex="1 1 21.5%">
+            <mat-toolbar color="accent" >
+              <mat-icon>refresh</mat-icon>
             </mat-toolbar>
-        </mat-card-content>
-      </mat-card>
+            <mat-card-title>Lorem ipsum</mat-card-title>
+            <mat-card-content>
+              <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,tetststtststtt </p>
+              <mat-chip-list>
+                  <mat-chip color="accent" selected="true">Lorem-Waiting</mat-chip>
+              </mat-chip-list>
+            </mat-card-content>
+        </mat-card>
+      </div>
 
-    <mat-card class="example-card">
-      <mat-card-header class="messages">
-      </mat-card-header>
-      <mat-card-content>
-          <mat-toolbar color="accent">
-              <button mat-mini-fab > <mat-icon>inbox</mat-icon></button>
-           </mat-toolbar>
-      </mat-card-content>
-  </mat-card>
-
-  <mat-card class="example-card">
-    <mat-card-header class="messages">
-    </mat-card-header>
-    <mat-card-content>
-        <mat-toolbar color="primary">
-            <button mat-mini-fab > <mat-icon>person_pin_circle</mat-icon></button>
-         </mat-toolbar>
-    </mat-card-content>
-</mat-card>
-<mat-card class="example-card">
-  <mat-card-header class="messages">
-  </mat-card-header>
-  <mat-card-content>
-      <mat-toolbar color="warn">
-          <button mat-mini-fab > <mat-icon>insert_drive_file</mat-icon></button>
-      </mat-toolbar>
-  </mat-card-content>
-</mat-card>
 </div>
