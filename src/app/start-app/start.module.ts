@@ -10,6 +10,7 @@ import {MainMaterialModule} from '../../main-material.module';
 import {StartAppComponent} from './start-app.component';
 import {HomeComponent} from '../home/home.component';
 import   {START_APP_ROUTES}   from    './routes';
+import { LoginComponent } from '../login/login.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import   {START_APP_ROUTES}   from    './routes';
   ],
   declarations: [
 StartAppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}
