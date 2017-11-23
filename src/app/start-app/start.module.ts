@@ -11,6 +11,7 @@ import {StartAppComponent} from './start-app.component';
 import {HomeComponent} from '../home/home.component';
 import   {START_APP_ROUTES}   from    './routes';
 import { LoginComponent } from '../login/login.component';
+import { UserDashboardComponent } from '../user-dashboard/user-dashboard.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { LoginComponent } from '../login/login.component';
   declarations: [
 StartAppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    UserDashboardComponent
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}
