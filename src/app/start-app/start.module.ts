@@ -10,6 +10,7 @@ import {MainMaterialModule} from '../../main-material.module';
 import {StartAppComponent} from './start-app.component';
 import {HomeComponent} from '../home/home.component';
 import   {START_APP_ROUTES}   from    './routes';
+import { UserDashboardComponent } from '../user-dashboard/user-dashboard.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import   {START_APP_ROUTES}   from    './routes';
   ],
   declarations: [
 StartAppComponent,
-    HomeComponent
+    HomeComponent,
+    UserDashboardComponent
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}

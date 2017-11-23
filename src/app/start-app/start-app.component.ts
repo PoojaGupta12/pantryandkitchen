@@ -12,7 +12,7 @@ import {Component, ElementRef, Renderer2, ViewEncapsulation} from '@angular/core
 export class StartAppComponent  {
   dark = false;
   navItems =[
-    {name: 'Item1', route: '/item1'},
+    {name: 'User Dashboard', route: '/udash'},
     {name:'Item2', route: '/item2'},
     {name: 'Item3', route: '/item3'}
 ]
