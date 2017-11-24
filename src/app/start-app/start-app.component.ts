@@ -1,5 +1,7 @@
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {Component, ElementRef, Renderer2, ViewEncapsulation} from '@angular/core';
+import {Router} from '@angular/router';
+
 
 @Component({
   moduleId: module.id,
@@ -28,7 +30,8 @@ user ={userName: 'ABCD', imageSrc: "../assets/images/cat.jpg"};
 
     constructor(private _element: ElementRef,
       private _renderer: Renderer2,
-      private _overlayContainer: OverlayContainer) { }
+      private _overlayContainer: OverlayContainer,
+      private router:Router) { }
 
       toggleFullscreen() {
         let elem = this._element.nativeElement.querySelector('.demo-content');
@@ -53,6 +56,10 @@ user ={userName: 'ABCD', imageSrc: "../assets/images/cat.jpg"};
           this._renderer.removeClass(this._element.nativeElement, darkThemeClass);
           this._overlayContainer.getContainerElement().classList.remove(darkThemeClass);
         }
+      }
+
+      select(item: string) {
+        this.router.navigate(['./login']);
       }
 
 }

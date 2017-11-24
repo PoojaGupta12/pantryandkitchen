@@ -10,7 +10,9 @@ import {MainMaterialModule} from '../../main-material.module';
 import {StartAppComponent} from './start-app.component';
 import {HomeComponent} from '../home/home.component';
 import   {START_APP_ROUTES}   from    './routes';
+import { LoginComponent } from '../login/login.component';
 import { UserDashboardComponent } from '../user-dashboard/user-dashboard.component';
+import { RegisterComponent } from '../register/register.component';
 
 @NgModule({
   imports: [
@@ -25,7 +27,9 @@ import { UserDashboardComponent } from '../user-dashboard/user-dashboard.compone
   declarations: [
 StartAppComponent,
     HomeComponent,
-    UserDashboardComponent
+    LoginComponent,
+    UserDashboardComponent,
+    RegisterComponent
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}
