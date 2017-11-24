@@ -1,0 +1,66 @@
+.background {
+  background: url("../../assets/images/wood.jpg") no-repeat center center;
+   height: 90%;
+   background-size: cover;
+  filter: brightness(90%);
+   position: absolute;
+   top: 10;
+   left: 0;
+  width: 100%;
+   z-index: 0;
+}
+
+.login-form {
+
+  margin: 50px;
+  .login-card {
+      width:400px;
+      margin-top: 40px;
+      border-radius: 10px;
+
+      .toolbar {
+        border-radius: 10px;
+      }
+      .login-icons {
+        padding-left:100px;
+      }
+  }
+  .login-form-field {
+    padding-left:25px;
+
+    .form-field {
+      width: 60%;
+    }
+
+  }
+  .login-title {
+    margin-top:10px;
+    //padding-left:100px;
+  }
+  // mat-card {
+  //   padding: 0!important;
+  // }
+
+  mat-card {
+  max-width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+  .tip{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black;
+  }
+
+
+  // .agreeTxt {
+  //   color:#ffd740;
+  //   cursor: pointer;
+  //   font-weight: 400;
+  // }
+}
