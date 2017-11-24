@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'pk-login',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   hide:boolean
-  constructor() {
+  constructor(private router:Router) {
     this.hide = true
   }
 
   ngOnInit() {
+  }
+
+  goToRegister() {
+    this.router.navigate(['./register']);
   }
 
 }
