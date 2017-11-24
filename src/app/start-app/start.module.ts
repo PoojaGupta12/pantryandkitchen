@@ -13,6 +13,7 @@ import   {START_APP_ROUTES}   from    './routes';
 import { LoginComponent } from '../login/login.component';
 import { UserDashboardComponent } from '../user-dashboard/user-dashboard.component';
 import { RegisterComponent } from '../register/register.component';
+import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ StartAppComponent,
     HomeComponent,
     LoginComponent,
     UserDashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotPasswordComponent
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}

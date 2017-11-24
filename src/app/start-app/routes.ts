@@ -3,6 +3,7 @@ import {StartAppComponent} from './start-app.component';
 import {HomeComponent} from '../home/home.component';
 import {LoginComponent} from '../login/login.component';
 import {RegisterComponent} from '../register/register.component';
+import {ForgotPasswordComponent} from '../forgot-password/forgot-password.component';
 
 import {UserDashboardComponent} from '../user-dashboard/user-dashboard.component';
 
@@ -12,7 +13,8 @@ export const START_APP_ROUTES: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'item1', component: LoginComponent},
     {path: 'udash', component: UserDashboardComponent},
-    {path: 'register', component: RegisterComponent}
+    {path: 'register', component: RegisterComponent},
+    {path: 'forgotPwd', component: ForgotPasswordComponent}
   ]},
 
   ];

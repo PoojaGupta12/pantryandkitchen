@@ -1,3 +1,57 @@
-<p>
-  register works!
-</p>
+<div class="background">
+    <div fxLayout="column" fxLayoutAlign="space-between center" class="login-form">
+      <mat-card  fxFlexAlign="center" class="login-card">
+
+        <mat-toolbar color="primary" class="toolbar">
+            <span class="login-icons">REGISTER</span>
+            <mat-toolbar-row class="login-icons">
+                <mat-card-actions>
+                    <button mat-icon-button>
+                        <i class="fa fa-facebook-square"></i>
+                      </button>
+                      <button mat-icon-button>
+                        <i class="fa fa-twitter"></i>
+                      </button>
+                      <button mat-icon-button>
+                        <i class="fa fa-google-plus"></i>
+                      </button>
+                  </mat-card-actions>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <mat-card-content class="login-form-field">
+          <form action="" fxLayout="column">
+            <mat-form-field color="accent" style="width: 90%">
+              <input matInput placeholder="First Name">
+              <mat-icon matSuffix>face</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field color="accent" style="width: 90%">
+              <input matInput placeholder="Email Address">
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field color="accent" style="width: 90%">
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field color="accent" style="width: 90%">
+                <input matInput placeholder="What is your first pet name?">
+                <mat-icon matSuffix>lock_outline</mat-icon>
+              </mat-form-field>
+
+                  <mat-checkbox>
+                    I agree to the <em> terms and conditions</em>
+                </mat-checkbox>
+
+          </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="accent">GET STARTED</button>
+          </mat-card-actions>
+
+      </mat-card>
+
+    </div>
+  </div>
