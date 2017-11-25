@@ -15,7 +15,7 @@ export class StartAppComponent  {
   dark = false;
   navItems =[
     {name: 'User Dashboard', route: '/udash'},
-    {name:'Item2', route: '/item2'},
+    {name:'All Recipe', route: '/recipe-list'},
     {name: 'Item3', route: '/item3'}
 ]
 
