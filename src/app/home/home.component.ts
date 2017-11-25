@@ -7,7 +7,7 @@ import { Component} from '@angular/core';
 })
 export class HomeComponent {
 
-  user ={userName: 'cat', imageSrc: "../assets/images/Cat.jpg"};
+  user ={userName: 'cat', imageSrc: "../assets/images/cat.jpg"};
   constructor() { }
 
 }
