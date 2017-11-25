@@ -25,17 +25,25 @@
   </div>
   <div fxFlex="85" fxFlexAlign="center" fxLayout="row" fxLayoutWrap>
       <mat-card *ngFor="let recipe of recipes" class="recipe-card">
-          <mat-card-title>
+          <mat-card-title >
               {{recipe.title}}
+              <mat-icon>view_list</mat-icon>
+              <mat-icon>sort</mat-icon>
           </mat-card-title>
           <mat-card-content>
-                <img src="../../assets/images/apple.jpg" [alt]="recipe.title">
+                <img src="../../assets/images/{{recipe.name}}.jpg" [alt]="recipe.title">
+                <span mat-line>Cook Time: {{recipe.cookTime}}</span>
           </mat-card-content>
           <mat-card-actions>
-              <h3 mat-line>{{recipe.title}}</h3>
-              <span mat-line>Cook Time: {{recipe.cookTime}}</span>
-              <mat-icon>star_border</mat-icon>
+            <!-- <mat-icon>thumb_up</mat-icon> -->
+            <mat-icon>edit</mat-icon>
+            <mat-icon>favorite</mat-icon>
+            <mat-icon>restaurant</mat-icon>
+            <mat-icon>grade</mat-icon>
           </mat-card-actions>
+          <mat-card-footer>
+
+          </mat-card-footer>
         </mat-card>
 
   </div>

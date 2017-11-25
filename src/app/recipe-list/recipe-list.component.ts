@@ -14,18 +14,18 @@ export class RecipeListComponent implements OnInit {
 
 recipes: Object[] =
     [
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
-        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30'},
+        {title: 'Raddish Meledy', rating: '2', cookTime: '40' , prepTime: '30',name: 'radishes'},
+        {title: 'Egg on Toast', rating: '2', cookTime: '40' , prepTime: '30',name: 'egg'},
+        {title: 'Veggie Noodles', rating: '2', cookTime: '40' , prepTime: '30',name: 'rice-noodles'},
+        {title: 'Pizza', rating: '2', cookTime: '40' , prepTime: '30',name: 'pizza'},
+        {title: 'Zander Filet', rating: '2', cookTime: '40' , prepTime: '30',name: 'zander-filet'},
+        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30',name: 'apple'},
+        {title: 'Egg on Toast', rating: '2', cookTime: '40' , prepTime: '30',name: 'egg'},
+        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30',name: 'apple'},
+        {title: 'Veggie Noodles', rating: '2', cookTime: '40' , prepTime: '30',name: 'rice-noodles'},
+        {title: 'Raddish Meledy', rating: '2', cookTime: '40' , prepTime: '30',name: 'radishes'},
+        {title: 'Zander Filet', rating: '2', cookTime: '40' , prepTime: '30',name: 'zander-filet'},
+        {title: 'Apple Crisp', rating: '2', cookTime: '40' , prepTime: '30',name: 'pizza'},
 
     ]
 
