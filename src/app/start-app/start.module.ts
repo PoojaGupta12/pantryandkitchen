@@ -15,6 +15,7 @@ import { UserDashboardComponent } from '../user-dashboard/user-dashboard.compone
 import { RegisterComponent } from '../register/register.component';
 import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 import { RecipeListComponent } from '../recipe-list/recipe-list.component';
+import { PantryComponent } from '../pantry/pantry.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ StartAppComponent,
     UserDashboardComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    PantryComponent
   ],
   providers: [
     {provide: OverlayContainer, useClass: FullscreenOverlayContainer}

@@ -6,6 +6,7 @@ import { RegisterComponent } from '../register/register.component';
 import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 import { UserDashboardComponent } from '../user-dashboard/user-dashboard.component';
 import { RecipeListComponent } from '../recipe-list/recipe-list.component';
+import { PantryComponent } from '../pantry/pantry.component';
 
 export const START_APP_ROUTES: Routes = [
   {
@@ -16,7 +17,8 @@ export const START_APP_ROUTES: Routes = [
       { path: 'udash', component: UserDashboardComponent },
       { path: 'register', component: RegisterComponent },
       { path: 'forgotPwd', component: ForgotPasswordComponent },
-      { path: 'recipe-list', component: RecipeListComponent }
+      { path: 'recipe-list', component: RecipeListComponent },
+      { path: 'pantry', component: PantryComponent }
     ]
   },
 
