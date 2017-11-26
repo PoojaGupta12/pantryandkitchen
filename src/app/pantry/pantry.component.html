@@ -1,3 +1,114 @@
-<p>
-  pantry works!
-</p>
+<div fxLayout="row">
+    <div fxFlex="15">
+      <mat-card>
+        <mat-card-title>
+          <button mat-button>
+            <mat-icon>search</mat-icon>
+          </button>
+        </mat-card-title>
+        <mat-card-subtitle>Sort by...</mat-card-subtitle>
+
+        <mat-card-content>
+          <mat-form-field>
+            <mat-select placeholder="Pokemon" [(ngModel)]="currentPokemonFromGroup">
+              <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name" [disabled]="group.disabled">
+                <mat-option *ngFor="let creature of group.pokemon" [value]="creature.value">
+                  {{ creature.viewValue }}
+                </mat-option>
+              </mat-optgroup>
+            </mat-select>
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fxLayout="row" fxLayoutWrap="wrap" fxFlex="85" fxLayoutAlign="start center" fxLayoutGap="5px">
+      <div class="ingredient-grid-list" fxFlexFill>
+        <mat-card>
+          <mat-card-title>Ingredients</mat-card-title>
+          <mat-card-content>
+            <mat-grid-list cols="12" rowHeight="200px">
+              <mat-grid-tile *ngFor="let ingredient of ingredients">
+                <img [alt]="ingredient.title" src="../../assets/images/pantry/{{ingredient.title}}.jpg">
+                <mat-grid-tile-footer>
+                  <h3 mat-line>{{ingredient.title.toUpperCase()}}</h3>
+                  <span mat-line>Amount: {{ingredient.amount}}</span>
+                  <span mat-line>Unit: {{ingredient.unit.title}}</span>
+                  <mat-icon>star_border</mat-icon>
+                </mat-grid-tile-footer>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- <div fxLayout="row">
+  <div fxFlex="15">
+    <mat-card>
+      <mat-card-title>
+        <button mat-button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-card-title>
+      <mat-card-subtitle>Sort by...</mat-card-subtitle>
+
+      <mat-card-content>
+        <mat-form-field>
+          <mat-select placeholder="Pokemon" [(ngModel)]="currentPokemonFromGroup">
+            <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name" [disabled]="group.disabled">
+              <mat-option *ngFor="let creature of group.pokemon" [value]="creature.value">
+                {{ creature.viewValue }}
+              </mat-option>
+            </mat-optgroup>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div fxLayout="row" fxLayoutWrap="wrap" fxFlex="85" fxLayoutAlign="start center" fxLayoutGap="5px">
+    <div class="ingredient-grid-list" fxFlexFill>
+      <mat-card>
+        <mat-card-title>Ingredients</mat-card-title>
+        <mat-card-content>
+          <mat-grid-list cols="12" rowHeight="200px">
+            <mat-grid-tile *ngFor="let dog of dogs">
+              <img [alt]="dog.name" src="https://material.angularjs.org/material2_assets/ngconf/{{dog.name}}.png">
+              <mat-grid-tile-footer>
+                <h3 mat-line>{{dog.name}}</h3>
+                <span mat-line>Human: {{dog.human}}</span>
+                <mat-icon>star_border</mat-icon>
+              </mat-grid-tile-footer>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- <div class="ingredient-grid-list">
+      <mat-card>
+          <mat-card-title>Ingredients</mat-card-title>
+          <mat-card-content>
+            <mat-grid-list cols="12" rowHeight="200px">
+              <mat-grid-tile *ngFor="let dog of dogs">
+                <img [alt]="dog.name" src="https://material.angularjs.org/material2_assets/ngconf/{{dog.name}}.png">
+                <mat-grid-tile-footer>
+                  <h3 mat-line>{{dog.name}}</h3>
+                  <span mat-line>Human: {{dog.human}}</span>
+                  <mat-icon>star_border</mat-icon>
+                </mat-grid-tile-footer>
+              </mat-grid-tile>
+            </mat-grid-list>
+          </mat-card-content>
+        </mat-card>
+      </div> -->
