@@ -23,11 +23,11 @@
     </div>
 
     <div fxLayout="row" fxLayoutWrap="wrap" fxFlex="85" fxLayoutAlign="start center" fxLayoutGap="5px">
-      <div class="ingredient-grid-list" fxFlexFill>
+      <div class="ingredient-grid-list" fxFlexFill >
         <mat-card>
           <mat-card-title>Ingredients</mat-card-title>
           <mat-card-content>
-            <mat-grid-list cols="12" rowHeight="200px">
+            <mat-grid-list cols="12" rowHeight="200px"  gutterSize="6px">
               <mat-grid-tile *ngFor="let ingredient of ingredients">
                 <img [alt]="ingredient.title" src="../../assets/images/pantry/{{ingredient.title}}.jpg">
                 <mat-grid-tile-footer>
