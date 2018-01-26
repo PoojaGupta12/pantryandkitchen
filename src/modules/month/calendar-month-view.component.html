@@ -1,0 +1,48 @@
+<div class="cal-month-view">
+  <button mat-raised-button color="primary" (click)="showAllClick()">ShowAll</button>
+  <mwl-calendar-month-view-header
+    [days]="columnHeaders"
+    [locale]="locale"
+    [customTemplate]="headerTemplate">
+  </mwl-calendar-month-view-header>
+
+  <div class="cal-days">
+    <div *ngFor="let rowIndex of view.rowOffsets" >
+        <!-- {{rowIndex}}{{showCalCellRow}}{{rowNumClick}} -->
+        <div class="cal-cell-row" *ngIf="!(!showCalCellRow && isInHideRowArray(rowIndex))">
+        <mwl-calendar-month-cell
+          *ngFor="let day of view.days | slice : rowIndex : rowIndex + (view.totalDaysVisibleInWeek)"
+          [class.cal-drag-over]="day.dragOver"
+          [ngClass]="day?.cssClass"
+          [day]="day"
+          [openDay]="openDay"
+          [locale]="locale"
+          [tooltipPlacement]="tooltipPlacement"
+          [tooltipAppendToBody]="tooltipAppendToBody"
+          [tooltipTemplate]="tooltipTemplate"
+          [customTemplate]="cellTemplate"
+          mwlDroppable
+          (dragEnter)="day.dragOver = true"
+          (dragLeave)="day.dragOver = false"
+          (drop)="day.dragOver = false; eventDropped(day, $event.dropData.event)"
+          (hideWeekClicked)="handleHideWeekClick($event)"
+          [rowIndex]="rowIndex">
+        </mwl-calendar-month-cell>
+        <!-- (click)="handleDayClick($event, day)"
+        (highlightDay)="toggleDayHighlight($event.event, true)"
+        (unhighlightDay)="toggleDayHighlight($event.event, false)"
+      (eventClicked)="eventClicked.emit({event: $event.event})" -->
+
+      </div>
+
+<!--
+      <mwl-calendar-open-day-events
+        [isOpen]="openRowIndex === rowIndex"
+        [events]="openDay?.events"
+        [customTemplate]="openDayEventsTemplate"
+        [eventTitleTemplate]="eventTitleTemplate"
+        (eventClicked)="eventClicked.emit({event: $event.event})">
+      </mwl-calendar-open-day-events> -->
+    </div>
+  </div>
+</div>

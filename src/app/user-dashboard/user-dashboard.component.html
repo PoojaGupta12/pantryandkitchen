@@ -1,4 +1,30 @@
-<div fxLayout="column" fxLayoutAlign="center center">
+
+<!-- <div fxLayout="column" fxLayoutAlign="center center"> -->
+  <div fxLayout="column" fxLayoutGap="2px" fxLayoutAlign="center center" class="mainHeader">
+    <div>
+      <button mat-raised-button color="primary" mwlCalendarPreviousView [view]="view" [(viewDate)]="viewDate" (viewDateChange)="activeDayIsOpen = false">
+        Previous</button>
+      <button mat-raised-button color="primary" mwlCalendarToday [(viewDate)]="viewDate">Today</button>
+      <button mat-raised-button color="primary" mwlCalendarNextView [view]="view" [(viewDate)]="viewDate" (viewDateChange)="activeDayIsOpen = false">
+        Next </button>
+    </div>
+
+    <div>
+      <h3 class="monthName">{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+    </div>
+  </div>
+  <br>
+  <div [ngSwitch]="view">
+    <mwl-calendar-month-view *ngSwitchCase="'month'" [viewDate]="viewDate" [events]="events" [refresh]="refresh" [activeDayIsOpen]="activeDayIsOpen"
+      (dayClicked)="dayClicked($event.day)" (eventClicked)="handleEvent('Clicked', $event.event)" (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-month-view>
+  </div>
+
+
+
+
+
+<!-- <div fxLayout="column" fxLayoutAlign="center center">
   <div fxLayout="row" fxLayoutAlign="center end" fxLayoutGap="5px" fxLayout.xs="column">
       <mat-card fxFlex="1 1 29%">
           <img mat-card-image src="../../assets/images/berries1.jpg">
@@ -53,4 +79,4 @@
 
   </div>
 
-</div>
+</div> -->

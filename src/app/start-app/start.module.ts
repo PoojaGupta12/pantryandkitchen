@@ -17,6 +17,8 @@ import { ForgotPasswordComponent } from '../forgot-password/forgot-password.comp
 import { RecipeListComponent } from '../recipe-list/recipe-list.component';
 import { PantryComponent } from '../pantry/pantry.component';
 
+import {CalendarModule} from '../../modules/calendar.module';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { PantryComponent } from '../pantry/pantry.component';
     RouterModule.forChild(START_APP_ROUTES),
     MainMaterialModule,
     LayoutModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CalendarModule.forRoot()
   ],
   declarations: [
 StartAppComponent,
